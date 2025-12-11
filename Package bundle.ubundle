@@ -1,0 +1,251 @@
+{
+  "export_version": 3,
+  "packages": [
+    {
+      "Id": "7zip",
+      "Name": "7zip",
+      "Version": "25.01",
+      "Source": "main",
+      "ManagerName": "Scoop"
+    },
+    {
+      "Id": "AdrienAllard.FileConverter",
+      "Name": "File Converter",
+      "Version": "2.1.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Apple.iTunes",
+      "Name": "iTunes",
+      "Version": "12.13.9.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Canva.Affinity",
+      "Name": "Affinity",
+      "Version": "3.0.0.3791",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Cloudflare.Warp",
+      "Name": "Cloudflare WARP",
+      "Version": "25.9.558.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "CodeSector.TeraCopy",
+      "Name": "TeraCopy",
+      "Version": "3.17",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "CoreyButler.NVMforWindows",
+      "Name": "NVM for Windows 1.2.2",
+      "Version": "1.2.2",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "DuongDieuPhap.ImageGlass",
+      "Name": "ImageGlass",
+      "Version": "9.3.2.520",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Flow-Launcher.Flow-Launcher",
+      "Name": "Flow Launcher",
+      "Version": "2.0.3",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Henry\u002B\u002B.MemReduct",
+      "Name": "Mem Reduct",
+      "Version": "3.5.2",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "JAMSoftware.TreeSize.Free",
+      "Name": "TreeSize Free V4.8.1",
+      "Version": "4.8.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "KDE.KDEConnect",
+      "Name": "KDE Connect",
+      "Version": "25.08.3",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Klocman.BulkCrapUninstaller",
+      "Name": "BCUninstaller 5.9.0.0",
+      "Version": "5.9.0.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Microsoft.AppInstaller",
+      "Name": "App Installer",
+      "Version": "1.27.350.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Obsidian.Obsidian",
+      "Name": "Obsidian",
+      "Version": "1.10.3",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "OpenJS.NodeJS.22",
+      "Name": "Node.js",
+      "Version": "22.21.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Proton.ProtonVPN",
+      "Name": "Proton VPN",
+      "Version": "4.3.5",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "RamenSoftware.Windhawk",
+      "Name": "Windhawk v1.6.1",
+      "Version": "1.6.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "RevoUninstaller.RevoUninstaller",
+      "Name": "Revo Uninstaller 2.6.2",
+      "Version": "2.6.2",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "ShareX.ShareX",
+      "Name": "ShareX",
+      "Version": "18.0.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "SoftDeluxe.FreeDownloadManager",
+      "Name": "Free Download Manager",
+      "Version": "6.31.0.6549",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "SumatraPDF.SumatraPDF",
+      "Name": "SumatraPDF",
+      "Version": "3.5.2",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Telegram.TelegramDesktop",
+      "Name": "Telegram Desktop",
+      "Version": "6.3.6",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "WinSCP.WinSCP",
+      "Name": "WinSCP 6.5.5",
+      "Version": "6.5.5",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Xanashi.Icaros",
+      "Name": "Icaros",
+      "Version": "3.3.3.301",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "Zen-Team.Zen-Browser",
+      "Name": "Zen Browser (x64 en-US)",
+      "Version": "1.17.12b",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "antonreshetov.massCode",
+      "Name": "massCode 4.3.0",
+      "Version": "4.3.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "git",
+      "Name": "Git",
+      "Version": "2.52.0",
+      "Source": "main",
+      "ManagerName": "Scoop"
+    },
+    {
+      "Id": "localsend",
+      "Name": "Localsend",
+      "Version": "1.17.0",
+      "Source": "extras",
+      "ManagerName": "Scoop"
+    },
+    {
+      "Id": "vlc",
+      "Name": "Vlc",
+      "Version": "3.0.21",
+      "Source": "extras",
+      "ManagerName": "Scoop"
+    },
+    {
+      "Id": "voidtools.Everything",
+      "Name": "Everything 1.4.1.1030 (x64)",
+      "Version": "1.4.1.1030",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "wezterm",
+      "Name": "Wezterm",
+      "Version": "20240203-110809-5046fc22",
+      "Source": "extras",
+      "ManagerName": "Scoop"
+    },
+    {
+      "Id": "winaero.tweaker",
+      "Name": "Winaero Tweaker",
+      "Version": "1.63.0.0",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    }
+  ],
+  "incompatible_packages_info": "Incompatible packages cannot be installed from UniGetUI, either because they came from a local source (for example Local PC) or because the package manager was unavailable. Nevertheless, they have been listed here for logging purposes.",
+  "incompatible_packages": [
+    {
+      "Id": "371WilliamHa.Dropshelf_1.0.7.0_x64_\u2026",
+      "Name": "Dropshelf",
+      "Version": "1.0.7.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "PureRef",
+      "Name": "PureRef",
+      "Version": "2.0.3",
+      "Source": "Local PC"
+    }
+  ]
+}
