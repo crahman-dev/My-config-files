@@ -1,0 +1,309 @@
+{
+  
+
+  /* ---------- 1. APPEARANCE & NAVIGATION ---------- */
+
+
+  "bottom_dock_layout": "contained",
+  "preview_tabs": {
+    "enable_preview_from_file_finder": false
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_sign_in": false,
+    "show_user_picture": false,
+    "show_onboarding_banner": true,
+    "show_project_items": true,
+    "show_branch_name": true
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "debugger": {
+    "button": true
+  },
+  "search": {
+    "button": false
+  },
+  "status_bar": {
+    "cursor_position_button": false,
+    "active_language_button": false
+  },
+  "toolbar": {
+    "quick_actions": false,
+    "breadcrumbs": false
+  },
+  "gutter": {
+    "breakpoints": true,
+    "runnables": true
+  },
+  "language_models": {
+    "openai_compatible": {
+      "Agent Router": {
+        "api_url": "https://agentrouter.org/",
+        "available_models": [
+          {
+            "name": "glm-4.5",
+            "max_tokens": 5000000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 5000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "context_servers": {
+    "mcp-server-github": {
+      "enabled": true,
+      "settings": {
+        "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    },
+    "prisma-mcp": {
+      "enabled": true,
+      "settings": {}
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {}
+    }
+  },
+  "show_edit_predictions": true,
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-pro"
+    },
+    "play_sound_when_agent_done": true,
+    "always_allow_tool_actions": true,
+    "dock": "right"
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "One Dark Pro Monokai Darker" // WebStorm default dark look-alike
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Latte"
+  }, // File-type icons (like Project View icons)
+  "ui_font_family": "Cascadia Code",
+  "buffer_font_family": "JetBrains Mono NL",
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "relative_line_numbers": "enabled", // Same as WebStorm gutter numbers
+  "minimap": { "hide": "auto" }, // Code-map on the right
+  "scrollbar": { "axes": { "horizontal": false, "vertical": null } },
+  "tabs":{ "git_status": false,
+           "files_icons": true},
+  "cursor_shape": "underline",
+  /* ---------- 2. EDITOR BEHAVIOR ---------- */
+  "format_on_save": "on", // ≡ WebStorm “Actions on Save”
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  "autosave": "on_focus_change", // WebStorm default
+  "soft_wrap": "prefer_line",
+  "wrap_guides": [80, 120], // Visual rulers
+  "linked_edits": true, // Simultaneous tag editing (HTML/JSX)
+  "hover_popover_enabled": false, // Disable quick-doc pop-ups (WebStorm Ctrl+Q)
+  "cursor_blink": true,
+
+  /* ---------- 3. PANEL LAYOUT (matching JetBrains docking) ---------- */
+  "project_panel": { "dock": "right", "width": 280, "git_status": true },
+  "outline_panel": { "dock": "right", "git_status": false },
+  "terminal": { "dock": "bottom" },
+  "git_panel": { "dock": "right" },
+  "tab_bar": { "show_nav_history_buttons": false,
+               "show": true },
+
+  /* ---------- 4. LANGUAGE SUPPORT  ---------- */
+  "languages": {
+    /* --- JavaScript / TypeScript / React / Vue / Node --- */
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true
+      },
+      "language_servers": ["vtsls", "tailwindcss-language-server", "..."],
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "language_servers": ["vtsls", "tailwindcss-language-server", "..."]
+    },
+    "TSX": {
+      "language_servers": ["vtsls", "tailwindcss-language-server", "..."]
+    },
+    "JSX": {
+      "language_servers": ["vtsls", "tailwindcss-language-server", "..."]
+    },
+    "Vue": {
+      "language_servers": [
+        "vue-language-server",
+        "vtsls",
+        "tailwindcss-language-server"
+      ]
+    },
+
+    /* --- PHP / Laravel / Blade --- */
+    "PHP": {
+      "language_servers": ["intelephense", "!phpactor", "..."],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "./vendor/bin/pint",
+          "arguments": ["--quiet", "{buffer_path}"]
+        }
+      }
+    },
+    "Blade": {
+      "language_servers": ["intelephense", "tailwindcss-language-server"],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "./vendor/bin/pint",
+          "arguments": ["--quiet", "{buffer_path}"]
+        }
+      }
+    },
+
+    /* --- Dart / Flutter --- */
+    "Dart": {
+      "language_servers": ["dart-language-server"],
+      "format_on_save": "on",
+      "formatter": { "language_server": { "name": "dart-language-server" } }
+    },
+
+    /* --- CSS / Tailwind / Prettier --- */
+    "CSS": {
+      "language_servers": ["tailwindcss-language-server", "..."],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+
+  /* ---------- 5. LSP TUNING  ---------- */
+  "lsp": {
+    "intelephense": {
+      "initialization_options": {
+        "licenceKey": "~/intelephense/licence.txt",
+        "storagePath": "~/.cache/intelephense"
+      },
+      "settings": { "php": { "version": "8.3" } }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "tailwindCSS": {
+          "emmetCompletions": true,
+          "classAttributes": [
+            "class",
+            "className",
+            "ngClass",
+            "tw",
+            "apply",
+            "variants"
+          ],
+          "includeLanguages": {
+            "blade": "html",
+            "vue": "html",
+            "tsx": "typescriptreact"
+          }
+        }
+      }
+    }
+  },
+
+  /* ---------- 7. EXTENSIONS  ---------- */
+  "auto_install_extensions": {
+    "php": true, // IntelliJ-PHP features
+    "vue": true, // Vue SFC support
+    "dart": true, // Flutter & Dart
+    "tailwindcss": true, // Tailwind IntelliSense
+    "prettier": true, // Code formatter
+    "eslint": true, // JS/TS linter
+    "git-firefly": true, // Git blame & history
+    "catppuccin": true, // Theme
+    "docker": true, // Container tools
+    "toml": true,
+    "yaml": true
+  },
+
+  /* ---------- 8. IGNORE CLUTTER (like .idea exclude) ---------- */
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/node_modules",
+    "**/dist",
+    "**/build",
+    "**/.next",
+    "**/vendor",
+    "**/storage",
+    "**/bootstrap/cache",
+    "**/public/hot"
+  ],
+
+"experimental.theme_overrides": {
+   "background": "#090909",
+   "editor.active_line_number": "#fff",
+   "editor.background": "#090909",
+   "editor.document_highlight.read_background": "#F4474750",
+   "editor.gutter.background": "#090909",
+   "editor.subheader.background": "#090909",
+   "element.background": "#090909",
+   "elevated_surface.background": "#050505",
+   "panel.background": "#090909",
+   "panel.border": "#090909",
+   "scrollbar.thumb.border": "#090909",
+   "scrollbar.track.background": "#090909",
+   "scrollbar.track.border": "#090909",
+   "status_bar.background": "#090909",
+   "tab.active_background": "#121212",
+   "tab.inactive_background": "#090909",
+   "tab_bar.background": "#090909",
+   "tab_bar.border": null,
+   "terminal.background": "#090909",
+   "title_bar.background": "#090909",
+   "toolbar.background": "#090909",
+   "toolbar.border": "#121212",
+   "syntax": {
+     "comment": {
+       "font_style": "italic"
+     },
+     "comment.doc": {
+       "font_style": "italic"
+     }
+   }
+ }
+}
